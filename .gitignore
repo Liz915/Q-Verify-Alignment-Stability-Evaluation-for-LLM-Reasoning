@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.DS_Store
+
+# Local runtime logs
+*.log
+
+# Generated experiment artifacts
+results/cache/
+results/dpo_checkpoints/
+results/analysis/
+results/generalization/
+results/topology/
+results/preliminary_plots/
+
+# Optional tracked release artifacts (curated, lightweight)
+!artifacts/
+!artifacts/**/*

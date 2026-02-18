@@ -1,0 +1,22 @@
+task_name: "VQE_LiH"
+description: "Variational Quantum Eigensolver for Lithium Hydride molecule."
+n_qubits: 6
+target_structure: "chemistry_ansatz"
+# UCCSD (Unitary Coupled Cluster) ansatz for LiH with 6 qubits (2 electrons in 4 orbitals)
+gates:
+  - op: "x"
+    qubits: [0]
+  - op: "h"
+    qubits: [1]
+  - op: "rx"
+    params: [0.5]
+    qubits: [2]
+  - op: "cx"
+    qubits: [0, 1]
+  - op: "cx"
+    qubits: [1, 2]
+  - op: "cx"
+    qubits: [2, 3]
+  - op: "rz"
+    params: [1.57]
+    qubits: [3]

@@ -1,0 +1,12 @@
+{
+    "name": "google_sycamore",
+    "version": "1.0",
+    "n_qubits": 53,
+    "basis_gates": ["phased_xz", "sycamore"],
+    "coupling_map": [
+        [0, 1], [1, 2], [2, 3], [3, 4], [4, 5],
+        [0, 6], [1, 6], [1, 7], [2, 7], [2, 8],
+        [5, 0], [6, 1], [7, 2], [8, 3]
+    ],
+    "description": "2D Grid Topology mimicking Google Sycamore processor."
+}

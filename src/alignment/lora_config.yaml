@@ -1,0 +1,24 @@
+# LoRA Configuration for Q-Verify Alignment
+# Target Model: Llama-3-8B / Mistral-7B
+
+peft_type: LORA
+task_type: CAUSAL_LM
+inference_mode: false
+
+# Low-Rank Adaptation parameters
+r: 16                   # Rank of the update matrices
+lora_alpha: 32          # Scaling factor
+lora_dropout: 0.05      # Regularization
+
+# Target Modules (Where to inject adapters)
+# Focusing on Attention layers for reasoning adaptation
+target_modules:
+  - "q_proj"
+  - "v_proj"
+  - "k_proj"
+  - "o_proj"
+  - "gate_proj"
+  - "up_proj"
+  - "down_proj"
+
+bias: "none"

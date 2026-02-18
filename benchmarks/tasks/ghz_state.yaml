@@ -1,0 +1,15 @@
+task_name: "GHZ_State_Preparation"
+description: "Create a maximally entangled Greenberger-Horne-Zeilinger state."
+n_qubits: 127
+target_structure: "star_graph"
+gates:
+  - op: "h"
+    qubits: [0]
+  - op: "cx"
+    qubits: [0, 1]
+  - op: "cx"
+    qubits: [1, 2]
+  - op: "cx"
+    qubits: [2, 3]
+  - op: "cx"
+    qubits: [3, 4]
