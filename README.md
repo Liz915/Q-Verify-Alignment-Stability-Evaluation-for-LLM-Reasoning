@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="assets/cover.png" width="900"><br>
+  <em>Quantum-Structured Evaluation of Alignment Robustness</em>
+</p>
+
 # Q-Verify
 
 Q-Verify is an evaluation framework for one research question:
