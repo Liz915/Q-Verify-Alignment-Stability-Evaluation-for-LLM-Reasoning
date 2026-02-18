@@ -18,3 +18,5 @@ results/preliminary_plots/
 # Optional tracked release artifacts (curated, lightweight)
 !artifacts/
 !artifacts/**/*
+data/raw_traces/aligned.jsonl
+data/raw_traces/unaligned.jsonl
