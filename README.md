@@ -10,6 +10,15 @@ The contribution is evaluation methodology, not a new training algorithm:
 - multi-seed statistical reporting (CI + permutation tests),
 - mechanism analysis across layers and noise types.
 
+## Figure + Key Takeaway
+
+![Stability under hidden-state perturbation](artifacts/paper/stability_stats_validity.png)
+
+Key takeaway:
+- Alignment does not automatically increase stability under internal perturbation.
+- Process-level correction (`Reflexion`) can recover part of the validity drop in noisy settings.
+- Claims are based on matched-compute controls and multi-seed statistics (`stability_stats_*`, `mechanism_*`).
+
 ## Design Principles
 
 1. **Controlled variables**: fixed task split, decoding protocol, and compute budget.
