@@ -3,8 +3,7 @@
   <em>Quantum-Structured Evaluation of Alignment Robustness</em>
 </p>
 
-# Q-Verify
-
+# Q-Verify: Alignment Stability Evaluation for LLM Reasoning
 Q-Verify is an evaluation framework for one research question:
 
 > **Does alignment improve reasoning stability, or mainly clean-input accuracy?**
@@ -20,8 +19,7 @@ The contribution is evaluation methodology, not a new training algorithm:
 ![Stability under hidden-state perturbation](artifacts/paper/stability_stats_validity.png)
 
 Key takeaway:
-- Alignment does not automatically increase stability under internal perturbation.
-- Process-level correction (`Reflexion`) can recover part of the validity drop in noisy settings.
+- In matched-compute settings, alignment training does not consistently increase stability under internal perturbations across layers and noise types.
 - Claims are based on matched-compute controls and multi-seed statistics (`stability_stats_*`, `mechanism_*`).
 
 ## Design Principles
