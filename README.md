@@ -61,6 +61,7 @@ Q-Verify/
 └── run_paper_suite.sh              # full paper pipeline
 ```
 
+
 ## Execution Paths
 
 There are two valid workflows.  
