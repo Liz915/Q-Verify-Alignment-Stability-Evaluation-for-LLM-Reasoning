@@ -131,18 +131,15 @@ README and RP do **not** need identical figure sets:
 - README: 1-2 representative figures + artifact paths.
 - RP/Paper: only figures directly supporting claims under page limits.
 
-## 2x2 Interaction Design (Planned Extension)
+## 2x2 Interaction Design (Ongoing / Fellowship Plan)
 
-To decouple internal perturbation and external prompting:
-1. Sys1 (no Reflexion) + noise
-2. Sys2 (with Reflexion) + noise
-3. Sys2 with noise on first attempt only
-4. Sys2 with noise on both first and reflection attempts
+Currently, the framework supports basic Base, DPO, and Reflexion evaluations under noise. To strictly decouple the effects of internal perturbation from external prompting, we are extending the pipeline into a 2x2 factorial design:
+1. Base system (no Reflexion) + Hidden-state noise
+2. Reflexion system + Hidden-state noise
+3. Reflexion system + Noise on the first attempt only
+4. Reflexion system + Noise on both first and reflection attempts
 
-Additional process metrics:
-- Revision Trigger Rate
-- Revision Success Rate
-- Refusal-to-Revise Rate
+We will capture process-level metrics (e.g., Revision Trigger Rate, Revision Success Rate) to mathematically analyze how aligned models recover from internal representation failures.
 
 ## Long-Run Mechanism Jobs
 
